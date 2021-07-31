@@ -32,7 +32,7 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
                 <img src="https://www.custom-wallpaper-printing.co.uk/custom/catalog/Howell/Tony-Howell-Z539-5016-8-Clifton-Suspension-Bridge-room.jpg" alt=""/>
             </div>*/}
             <div className={s.descriptionBlock}>
-                <img src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
+              <img src={profile.photos.large || userPhoto} className={s.mainPhoto}/>
                 <div>
                     {isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}
                 </div>
