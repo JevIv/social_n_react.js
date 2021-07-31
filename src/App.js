@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import {HashRouter, Route, withRouter} from "react-router-dom";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
 //import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer.jsx";
 //import ProfileContainer from "./components/Profile/ProfileContainer";
@@ -56,13 +56,13 @@ let AppContainer = compose(
 const SamuraiJsApp = (props) => {
     return (
         <Provider store={store}>
-            <HashRouter>
+            <BrowserRouter>
                 <AppContainer
      //appState={state} //вызываем функцию
     //                  //dispatch={store.dispatch.bind(store)}
     //                  //store={store} //передаем дальше функцию
                 />
-            </HashRouter>
+            </BrowserRouter>
         </Provider>)
 }
 
